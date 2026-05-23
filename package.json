@@ -1,0 +1,42 @@
+{
+  "name": "scml-frame-exporter",
+  "version": "1.0.0",
+  "description": "Export BrashMonkey Spriter SCML animations to PNG frame sequences, spritesheets, and GIFs.",
+  "packageManager": "bun@1.3.6",
+  "bin": {
+    "scml-frame-exporter": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "scml",
+    "spriter",
+    "sprite",
+    "animation",
+    "png",
+    "spritesheet",
+    "gif",
+    "cli"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "bun src/cli.ts",
+    "start": "node dist/cli.js",
+    "prepack": "npm run build",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fast-xml-parser": "^4.5.1",
+    "gifenc": "^1.0.3",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
