@@ -1,6 +1,6 @@
 {
   "name": "scml-frame-exporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Export BrashMonkey Spriter SCML animations to PNG frame sequences, spritesheets, and GIFs.",
   "packageManager": "bun@1.3.6",
   "bin": {
